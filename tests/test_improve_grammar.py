@@ -14,3 +14,16 @@ def test_improve_grammar_good_grammar_string():
 
 def test_improve_grammar_bad_grammar_string():
     assert improve_grammar("how are you") == "Grammar mistakes detected!"
+
+
+def includes_todo(string):
+    for x in string:
+        if x == "#TODO":
+            return True
+        else:
+            return False
+        
+print(includes_todo("#TODO buy milk"))
+print(includes_todo("I like cheese"))
+print(includes_todo("Go to the gym #TODO"))
+
