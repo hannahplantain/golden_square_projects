@@ -35,3 +35,21 @@ class DiaryEntry:
     #     # skipping what has already been read, until the contents is fully read.
     #     # The next call after that should restart from the beginning.
     #     pass
+
+# def reading_chunk(self, wpm, minutes):
+#         words = self.contents.split()
+#         total_words = len(self.contents.split())
+
+#         if self.word_count >= total_words:
+#             self.word_count = 0
+        
+#         allotted_words = wpm * minutes
+
+#         content_chunk = []
+#         for word in words[self.word_count:]:
+#             if len(content_chunk) == allotted_words:
+#                 break
+#             content_chunk.append(word)
+#             self.word_count += 1
+        
+#         return ' '.join(content_chunk)
