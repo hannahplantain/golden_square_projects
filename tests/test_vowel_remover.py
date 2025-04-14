@@ -1,6 +1,6 @@
 # File: tests/test_vowel_remover.py
 
-from lib.vowel_remover import *
+from lib.vowel_remover import VowelRemover
 
 def test_simple():
     remover = VowelRemover("ab")
