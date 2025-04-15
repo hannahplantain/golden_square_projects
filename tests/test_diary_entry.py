@@ -27,7 +27,7 @@ def test_diary_entry_count_words():
 
 def test_diary_entry_reading_time():
     entry2 = DiaryEntry("Second Long Day", "Day two at work and already feeling more settled! Met with the team for our morning standup and actually contributed a few ideas. Got the hang of the project management system and finished my first task early. Even had lunch with Sarah from marketing. Starting to feel like I belong here!")
-    assert entry2.reading_time(10) == "This text will take you approximately 5 minutes to read"
+    assert entry2.reading_time(10) == 5
 
 #test reading_chunk: should return a string: a chunk of the contents that the user could read in the given number of minutes
 
